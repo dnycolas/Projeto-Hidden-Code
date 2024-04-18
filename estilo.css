@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Bruno";
+    src: url(fontes/BrunoAceSC-Regular.ttf);
+}
+
+:root {
+    --rosa-hiddencode: #fe1064;
+}
+
+/* Reset de CSS - Limpa configurações padrão que atrapalham */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    /* margin: 30px - Espaçamento de 30 px em torno do elemento*/
+    /* margin: 0px 30px - Espaçamento 0px vertical e 30px horizontal*/
+    /* margin: 0px 30px 10px - Espaçamento 0px para cima, 30px horizontal e 10 para baixo*/
+    
+    /* margin: 0px 30px 10px 20px- 
+    Espaçamento 0px para cima, 30px para direita e 10 para baixo e 20 para esquerda*/
+    margin: 0 auto;
+}
+
+.banner {
+    height: 269px;
+    width: 619px;
+
+    background-image: url(imagens/logotipo-hiddencode.png);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+/*estilo da fonte,tamanho da fonte,cor*/
+.menu {
+    font-family: 'Bruno';
+    font-size: 24px;
+    color:var(--rosa-hiddencode);
+}
+
+/*tamanho do menu, organização da linha*/
+.menu {
+    width: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
