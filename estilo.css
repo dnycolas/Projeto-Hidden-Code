@@ -2,6 +2,10 @@
     font-family: "Bruno";
     src: url(fontes/BrunoAceSC-Regular.ttf);
 }
+@font-face {
+    font-family: "kdam thmor pro";
+    src: url(fontes/KdamThmorPro-Regular.ttf);
+}
 
 :root {
     --rosa-hiddencode: #fe1064;
@@ -21,6 +25,7 @@ html {
 
 
 .container-grid {
+    height: 100vh;
     width: 1500px;
 
     /* margin: 30px - Espaçamento de 30 px em torno do elemento*/
@@ -91,12 +96,14 @@ width: 620px;
     width: 620px;
 
     display: flex;
-    justify-content: center;
+    justify-content: center;
 } */
 
 .conteudo-banner {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .logotipo {
@@ -108,8 +115,6 @@ width: 620px;
     padding: 80px;
 
     display: flex;
-
-    width: 620px;
 }
 
 .sobre {
@@ -117,22 +122,39 @@ width: 620px;
 
     display: flex;
     justify-content: center;
+    text-align: center;
+
+    margin: 0px 0px 200px ;
 }
 
-.sobre p {
-
-    width: 16%; 
+.sobre p { 
     justify-content: center;
     display: flex;
     font-family: 'Bruno';
-    width: 620px;
-    font-size: 24px; padding: 80px;
+    width: 790px;
+    font-size: 24px;
 }
 
 
 .cases-da-empresa {
     display: flex;
     justify-content: center;
+
+    margin: 0px 40px;
+}
+
+h2 {
+    font-family: 'Bruno';
+    font-size: 64px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: 0px;
+    margin: 80px 0px 0px 0px;
+
+    width: 100%;
 }
 
 .caixa-dos-cases {
@@ -140,27 +162,27 @@ width: 620px;
 
     color: #fe1064;
 
-    height: 700px;
     width: 100%;
-    padding: 40px;
+    padding: 30px;
 
     border: 6px solid ;
     border-radius: 20px;
 
-    margin: 80px 50px 80px 50px;
+    margin: 20px 50px 80px 50px;
 }
 
 .sinopse-cases {
     display: flex;
     flex-direction: column;
-    justify-content: left;
 
     width: 460px;
 }
 
 .sinopse-cases img {
-    width: 460px;
-    height: 300px;
+    width: 360px;
+    height: 200px;
+
+    margin: 0px 50px;
 }
 
 .sinopse-cases textarea {
@@ -175,6 +197,7 @@ width: 620px;
 }
 
 .sinopse-cases textarea {
+    height: 100%;
 
     border: 2px solid #000000;
     border-radius: 20px;    
@@ -183,18 +206,45 @@ width: 620px;
     font-family: 'Bruno';
     font-size: 16px;
 
-    padding: 5px;
+    padding: 5px 0px 5px 5px;
 
     resize: none;
 }
 
-.caixa-dos-cases #case {
-    width: 100%;
+.historia #case {
+    width: 528px;
+    height: 100%;
 
-    padding: 48px ;
+    padding: 75px 30px 30px 30px ;
 
     border: 2px solid;
     border-radius: 20px ;
 
+    margin: 0px 0% 0px 50px;
 
+    resize: none;
+
+    display: flex;
+    align-items: flex-end;
+
+    font-size: 24px;
+    font-family:"kdam thmor pro" ;
 }
+
+.historia {
+    width: 100%;
+}
+
+
+.titulo-do-case {
+    width: 100%;
+    height: 0;
+
+    border: #000000;
+    color: #000000;
+
+    display: flex;
+
+    margin: 0px;
+}
+
