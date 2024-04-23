@@ -68,7 +68,7 @@ img {
 .menu a {
     font-family: 'Bruno';
     font-size: 24px;
-    background-color: #fe1064;
+    background-color:var(--rosa-hiddencode);
     color: white;
 
 
@@ -82,22 +82,6 @@ img {
     margin-left:20;
 }
 
-
-/* 
-.logotipo{
-    display: flex;
-    justify-content: center;
-width: 620px;
-    padding: 80px 0PX;
-}
-
-   
-.conteudo-banner {
-    width: 620px;
-
-    display: flex;
-    justify-content: center;
-} */
 
 .conteudo-banner {
     display: flex;
@@ -160,15 +144,15 @@ h2 {
 .caixa-dos-cases {
     display: flex;
 
-    color: #fe1064;
+    color: var(--rosa-hiddencode);
 
     width: 100%;
     padding: 30px;
 
-    border: 6px solid ;
+    border: 8px solid ;
     border-radius: 20px;
 
-    margin: 20px 50px 80px 50px;
+    margin: 20px 50px 50px 50px;
 }
 
 .sinopse-cases {
@@ -248,3 +232,52 @@ h2 {
     margin: 0px;
 }
 
+.convite-portfolio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0px 90px;
+
+    max-height: 90px;
+}
+
+.caixa-do-convite {
+    height: 90px;
+}
+
+.caixa-do-convite p {
+    font-family: 'kdam thmor pro';
+    font-size: 24px;
+  
+    padding: 20px;
+
+    border: 6px solid #fe1064;
+    border-radius: 100px;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.ir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    border: 6px solid #fe1064;
+    border-radius: 50px;
+
+    font-family:'kdam thmor pro' ;
+    font-size: 24px;
+
+    width: 0%;
+    height: 90px;
+
+    padding: 0px 40px;
+
+    text-transform: uppercase;
+}
