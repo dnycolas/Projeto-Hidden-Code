@@ -244,6 +244,7 @@ h2 {
 
 .caixa-do-convite {
     height: 90px;
+
 }
 
 .caixa-do-convite p {
@@ -280,4 +281,144 @@ h2 {
     padding: 0px 40px;
 
     text-transform: uppercase;
+}
+
+
+
+#contato h2 {
+    margin: 230px 0px 20px 0px ;
+}
+
+#contato form {
+    /* width: 100%; */
+    margin: 0px 6.52%;
+    padding: 30px 0;
+    display: flex;
+    border: 6px solid var(--rosa-hiddencode);
+    border-radius: 20px;
+    color: #040001;
+    font-family:'Bruno';
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato form label {
+    margin-bottom: 2px;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.campo {
+    width: 60%;
+
+    margin-bottom: 50px;
+
+    text-align: left;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo input {
+    height: 60px;
+    color: white;
+    /* background-color: #351868; */
+    /* border: solid; */
+    border: 6px solid #fe1064;
+    outline: none;
+    text-indent: 10px;
+    font-family: 'Bruno';
+    font-size: 16px;
+    border-radius: 28px;
+}
+
+/* essas linha serão usadas após a inplementação dos elementos de JAVASCRIPT  */
+/* 
+.campo-textarea {
+    width: 60%;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo-textarea textarea {
+    color: white;
+    border: 6px solid #FE1062;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-family: 'kdam thmor pro';
+    font-size: 17px;
+    outline: none;
+    resize: none;
+}
+
+.campo input:focus, .campo-textarea textarea:focus {
+    outline: 2px solid var(--laranja-gamifica);
+}
+
+
+#contato form button {
+    display: flex;
+
+    height: 40px;
+    width: auto;
+
+    padding-block: 10px;
+    padding-inline: 20px;
+
+    font-family: 'Bruno';
+    font-size: 17px;
+
+
+    background-color: var(--rosa-hiddencode);
+    color: white;
+
+    border: none;
+    border-radius: 20px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms ease;
+}
+
+#contato button:hover {
+    background-color:#b30044;
+}
+
+#contato form input::placeholder,
+#contato form textarea::placeholder {
+    color: #b9b9b9;
+} */
+
+
+
+.opcoes {
+    width: 690.8;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.opcoes img {
+    width: 51.8;
+    padding: 0px;
+}
+
+.opcoes a {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    border:6px solid #fe1064;
+    border-radius:100px;
+
+    padding:20px;
 }
