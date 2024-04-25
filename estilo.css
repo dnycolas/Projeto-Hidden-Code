@@ -20,20 +20,22 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
-
+.elementos {
+    background-image: url(imagens/elementos-esquerda.png);
+    background-repeat: no-repeat;
+    background-position-x: 10% ;
+    background-position-y: 10%;
+    background-size: 80%;
+}
 
 .container-grid {
     height: 100vh;
     width: 1500px;
 
-    /* margin: 30px - Espaçamento de 30 px em torno do elemento*/
-    /* margin: 0px 30px - Espaçamento 0px vertical e 30px horizontal*/
-    /* margin: 0px 30px 10px - Espaçamento 0px para cima, 30px horizontal e 10 para baixo*/
     
-    /* margin: 0px 30px 10px 20px- 
-    Espaçamento 0px para cima, 30px para direita e 10 para baixo e 20 para esquerda*/
     margin: 0 0px;
 }
 
@@ -97,7 +99,6 @@ img {
 
 .logotipo img {
     padding: 80px;
-
     display: flex;
 }
 
@@ -198,21 +199,15 @@ h2 {
 .historia #case {
     width: 528px;
     height: 100%;
-
-    padding: 75px 30px 30px 30px ;
-
+    padding: 75px 30px 30px 30px;
     border: 2px solid;
-    border-radius: 20px ;
-
-    margin: 0px 0% 0px 50px;
-
+    border-radius: 20px;
+    margin: 0% 0% 0% 16%;
     resize: none;
-
     display: flex;
     align-items: flex-end;
-
     font-size: 24px;
-    font-family:"kdam thmor pro" ;
+    font-family:"kdam thmor pro";
 }
 
 .historia {
@@ -292,7 +287,7 @@ h2 {
 #contato form {
     /* width: 100%; */
     margin: 0px 6.52%;
-    padding: 30px 0;
+    padding: 2% 0;
     display: flex;
     border: 6px solid var(--rosa-hiddencode);
     border-radius: 20px;
@@ -407,8 +402,7 @@ h2 {
 
 
 .opcoes {
-    width: 690.8;
-
+    width: 53%;
     display:flex;
     justify-content:space-between;
 }
@@ -565,4 +559,51 @@ h2 {
 #feedback form textarea::placeholder {
     color: #b9b9b9;
 } 
+
+
+footer {
+    height: 50%;
+    background-color: #f5f5f7;
+}
+
+footer .container-grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociais {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.redes-sociais p {
+    display: flex;
+    color: 6f6f6f;
+    font-family: 'bruno';
+    font-size: 24px;
+    justify-content: center;
+}
+
+.icones-redes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a {
+    color: fe1064;
+    border: 6px solid black;
+    border-radius: 58%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
 
