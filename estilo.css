@@ -322,19 +322,22 @@ h2 {
 
 .campo input {
     height: 60px;
-    color: white;
+    color: black;
     /* background-color: #351868; */
     /* border: solid; */
     border: 6px solid #fe1064;
     outline: none;
     text-indent: 10px;
-    font-family: 'Bruno';
-    font-size: 16px;
+
+    /* fonte da caixa de texto */
+    /* font-family: 'Bruno'; */
+
+    font-size: 24px;
     border-radius: 28px;
 }
 
 /* essas linha serão usadas após a inplementação dos elementos de JAVASCRIPT  */
-/* 
+
 .campo-textarea {
     width: 60%;
 
@@ -348,12 +351,15 @@ h2 {
 }
 
 .campo-textarea textarea {
-    color: white;
+    color: black;
     border: 6px solid #FE1062;
     border-radius: 20px;
     padding: 5px 20px;
-    font-family: 'kdam thmor pro';
-    font-size: 17px;
+
+    /* fonte da caixa de texto */
+    /* font-family: 'kdam thmor pro'; */
+
+    font-size: 24px;
     outline: none;
     resize: none;
 }
@@ -396,7 +402,7 @@ h2 {
 #contato form input::placeholder,
 #contato form textarea::placeholder {
     color: #b9b9b9;
-} */
+} 
 
 
 
@@ -421,4 +427,142 @@ h2 {
     border-radius:100px;
 
     padding:20px;
+
+    cursor: pointer;
+
+    transition: border 500ms ease;
 }
+
+.opcoes a:hover {
+    border:6px solid #b30044;
+}
+
+
+
+#feedback h2 {
+    margin: 230px 0px 20px 0px ;
+}
+
+#feedback form {
+    /* width: 100%; */
+    margin: 0px 6.52%;
+    padding: 30px 0;
+    display: flex;
+    border: 6px solid var(--rosa-hiddencode);
+    border-radius: 20px;
+    color: #040001;
+    font-family:'Bruno';
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback form label {
+    margin-bottom: 2px;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.nome-de-usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-nome-usuario {
+    font-size: 16px;
+}
+
+.campo-de-nome {
+    width: 70%;
+
+    margin-bottom: 50px;
+
+    text-align: left;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo-de-nome input {
+    height: 60px;
+    color: black;
+    /* background-color: #351868; */
+    /* border: solid; */
+    border: 6px solid #fe1064;
+    outline: none;
+    text-indent: 10px;
+
+    /* fonte da caixa de texto */
+    /* font-family: 'Bruno'; */
+
+    font-size: 24px;
+    border-radius: 28px;
+}
+
+/* essas linha serão usadas após a inplementação dos elementos de JAVASCRIPT  */
+
+.campo-area-de-texto {
+    width: 70%;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo-area-de-texto textarea {
+    color: black;
+    border: 6px solid #FE1062;
+    border-radius: 20px;
+    padding: 5px 20px;
+
+    /* fonte da caixa de texto */
+    /* font-family: 'kdam thmor pro'; */
+
+    font-size: 24px;
+    outline: none;
+    resize: none;
+}
+
+.campo-de-nome input:focus, .campo-area-de-texto textarea:focus {
+    outline: 2px solid var(--laranja-gamifica);
+}
+
+
+#feedback form button {
+    display: flex;
+
+    height: 40px;
+    width: auto;
+
+    padding-block: 10px;
+    padding-inline: 20px;
+
+    font-family: 'Bruno';
+    font-size: 17px;
+
+
+    background-color: var(--rosa-hiddencode);
+    color: white;
+
+    border: none;
+    border-radius: 20px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms ease;
+}
+
+#feedback button:hover {
+    background-color:#b30044;
+}
+
+#feedback form input::placeholder,
+#feedback form textarea::placeholder {
+    color: #b9b9b9;
+} 
+
