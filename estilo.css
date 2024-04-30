@@ -41,10 +41,8 @@ header {
 header div.container-grid {
     width: 100%;
     height: 100%;
-
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 img {
@@ -96,9 +94,9 @@ img {
 .elemento-2 {
     background-image: url(imagens/elementos-esquerda-2.png),url(imagens/elementos-direita-2.png);
     background-repeat: no-repeat;
-    background-size: 33%,47%;
-    background-position: left, right;
+    background-size: 37%,47%;
     background-position-y: 25%, 44%;
+    background-position-x: -3%,25%;
 }
 
 .elemento-3 {
@@ -262,10 +260,11 @@ textarea#case {
 
 .convite-portfolio {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    margin: 4% 6.685% 0% 6.685%;
+    margin: 4% 0% 6.685%;
     max-height: 90px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .caixa-do-convite {
@@ -330,9 +329,10 @@ section#contato h2 {
     border-radius: 20px;
     color: #040001;
     font-family:'Bruno';
+    background-color: #f5f5f7;
+    width: 95%;
     flex-direction: column;
     align-items: center;
-    background-color: #f5f5f7;
 }
 
 
@@ -452,7 +452,7 @@ section#contato h2 {
 
 
 .opcoes {
-    width: 53%;
+    width: 60%;
     display:flex;
     justify-content:space-between;
 }
@@ -674,7 +674,7 @@ footer .container-grid{
 }
 
 .icones-redes a {
-    color: fe1064;
+    color: #fe1064;
     border: 6px solid black;
     border-radius: 58%;
     padding: 2%;
@@ -685,8 +685,24 @@ footer .container-grid{
 }
 
 @media screen and (max-width: 1300px) {
+    
+    header div.container-grid {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    container-grid{
+        width:100%;
+    }
+    
     header {
         position: relative;
+        background-color:#d9d9d9;
+        width: 100%;
+        display:flex;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
     }
     
     header button {
@@ -698,6 +714,12 @@ footer .container-grid{
     header svg {
         fill: white;
     }
+
+    header img {
+        position:relative;
+
+    }
+    
     nav.menu {
         height: 500px;
         width: 350px;
@@ -716,9 +738,6 @@ footer .container-grid{
     .card {
         height: 320px;
         width: 200px;
-    }
-    #contato form {
-        width: 75%;
     }
 }
 
