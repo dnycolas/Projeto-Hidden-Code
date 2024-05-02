@@ -995,7 +995,13 @@ footer .container-grid{
         font-size: 24px;
       }
   
-  
+      .icone-case-e-sinopse {
+        flex-direction: column;
+      }
+      
+      .oncinha {
+        margin: 10 0;
+      }
   
       .icone-case-e-sinopse img {
           position:relative;
