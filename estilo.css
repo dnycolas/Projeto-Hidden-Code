@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Bruno";
     src: url(fontes/BrunoAceSC-Regular.ttf);
@@ -41,19 +42,22 @@ header {
 header div.container-grid {
     width: 100%;
     height: 100%;
-    align-items: center;
+    
     display: flex;
+
+    align-items: center;
+    justify-content: center;
 }
 
 img {
-    padding: 0px 80px;
+    /* padding: 0px 80px; */
 }
 
 .menu {
-    width: 900px;
+    width: 66.79%;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 
@@ -96,7 +100,7 @@ img {
     background-repeat: no-repeat;
     background-size: 37%,47%;
     background-position-y: 25%, 44%;
-    background-position-x: -3%,25%;
+    background-position-x: -3%,100%;
 }
 
 .elemento-3 {
@@ -172,33 +176,52 @@ h2 {
 }
 
 
-.sinopse-cases {
+.icone-case-e-sinopse {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+}
 
-    width: 460px;
+
+.sinopse-cases {
+
+    flex-direction: row;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    width: 320px;
+
+
+}
+
+
+.sinopse-cases > div.oncinha {
+  display: flex;
+  flex-shrink: 0;
+    
+  width: 230px;
+  height: 400px;
+    
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+    
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
 }
 
 .sinopse-cases img {
-    width: 360px;
-    height: 200px;
-
-    margin: 0px 50px;
+    width: 50%;
 }
 
 .sinopse-cases textarea {
     display: flex;
-    
     max-width: 300px;
-    height: 260px;
-
-    margin: 30px 80px 0px 80px;
-
-    
+    margin: 30px 0px;
 }
 
 .sinopse-cases textarea {
-    height: 100%;
     border: 2px solid #000000;
     border-radius: 20px;
     color: black;
@@ -206,7 +229,18 @@ h2 {
     font-size: 16px;
     padding: 5px 0px 5px 5px;
     resize: none;
+    height: 100%;
 }
+
+.oncinha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10;
+}
+
+
+
 
 .historia {
     border: 2px solid #fe1064;
@@ -701,19 +735,17 @@ footer .container-grid{
         background-color:#d9d9d9;
         width: 100%;
         display:flex;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
     }
     
     header button {
-        width: 50px;
         display: unset;
         background: none;
         border: none;
+        width: 10.3%;
+        height: 48.32%;
+        margin: 0px 10%;
     }
-    header svg {
-        fill: white;
-    }
+
 
     header img {
         position:relative;
@@ -739,6 +771,20 @@ footer .container-grid{
         height: 320px;
         width: 200px;
     }
+
+    header div.container-grid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        width: 900px;
+    
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
@@ -755,13 +801,15 @@ footer .container-grid{
     footer {
         height: unset;
     }
+
     footer .container-grid {
-        padding: 80px;
-        flex-direction: column;
+    height: 50%;
     }
+
     footer img {
         margin-bottom: 100px;
     }
+
     footer p {
         width: 100%;
         text-align: center;
@@ -771,12 +819,260 @@ footer .container-grid{
     .redes-sociais {
         align-items: center;
     }
+
+    .convite-portfolio {
+        display: flex;
+        align-items: center;
+        margin: 4% 0% 6.685%;
+        max-height: 90px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .caixa-do-convite {
+        height: 90px;
+        width: 91%;
+        margin: 10;
+    }
+    
+    .caixa-do-convite p {
+        font-family: 'kdam thmor pro';
+        font-size: 24px;
+        padding: 11px;
+        border: 6px solid #fe1064;
+        border-radius: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .ir {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px solid #fe1064;
+        border-radius: 50px;
+        font-family:'kdam thmor pro';
+        font-size: 24px;
+        width: 15%;
+        height: 90px;
+        padding: 0px 40px;
+        text-transform: uppercase;
+    }
+    
 }
+
+
 @media screen and (max-width: 800px) {
     .card {
         flex-basis: 45%;
     }
+
+    .convite-portfolio {
+        display: flex;
+        align-items: center;
+        margin: 4% 0% 6.685%;
+        max-height: 90px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .caixa-do-convite {
+        height: 90px;
+        width: 91%;
+        margin: 10;
+    }
+    
+    .caixa-do-convite p {
+        font-family: 'kdam thmor pro';
+        font-size: 24px;
+        padding: 11px;
+        border: 6px solid #fe1064;
+        border-radius: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .ir {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px solid #fe1064;
+        border-radius: 50px;
+        font-family:'kdam thmor pro';
+        font-size: 24px;
+        width: 0%;
+        height: 90px;
+        padding: 0px 40px;
+        text-transform: uppercase;
+    }
+    
 }
+
+@media screen and (max-width: 780px) {
+    body {
+        width:780px;
+    }
+   
+    .container-grid img {
+        margin: 0 80;
+        width: 12%;
+    }
+
+    .container-grid svg {
+       width:80; 
+       height:80; 
+    }
+    
+    .sobre p {
+        width:100%;
+    }
+
+    .menu a {
+        width:100%;
+    }  
+
+    .historia {
+        background:transparent;   
+
+        border:none;
+        
+        border-left:4px solid #040001;
+        border-radius:0;
+
+        display: flex;
+        flex-shrink: 0;
+        width: 300;
+        height:100%;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        
+    }
+
+    .titulo-historia {
+        display:flex;
+
+        align-items:center;
+        
+        background-color:transparent;
+    }
+
+    .titulo-historia h2 {
+        margin:0;
+        
+    }
+
+    .explicacao-case textarea {
+        background-color:transparent;
+    }
+
+
+    .sinopse-cases {
+        display: flex;
+        overflow-y: auto;
+        height: 270px;   
+        flex-direction:column;  
+      }
+  
+      
+      .sinopse-cases > div.oncinha {
+        display: flex;
+        flex-shrink: 0;
+        width:100%;  
+        height: auto;
+        scroll-snap-align: start;
+        scroll-behavior: smooth;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+  
+  
+  
+      .icone-case-e-sinopse img {
+          position:relative;
+          top: 73px;
+          width:80%;
+      }  
+  
+      .icone-case-e-sinopse img:first-child {
+          position:relative;
+          top: 15px;
+          width:80%;
+      }  
+  
+      .icone-case-e-sinopse textarea  {
+          visibility:hidden;
+          height:0;
+  
+          margin:0;
+      }
+  
+      div.icones-redes svg {
+          width:80%;
+      }
+
+    .caixa-do-convite {
+        height: 90px;
+        width: 91%;
+        margin: 10;
+    }
+
+
+
+    .convite-portfolio {
+        display: flex;
+        align-items: center;
+        margin: 4% 0% 6.685%;
+        max-height: 90px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .caixa-do-convite {
+        height: 90px;
+        width: 91%;
+        margin: 10;
+    }
+    
+    .caixa-do-convite p {
+        font-family: 'kdam thmor pro';
+        font-size: 24px;
+        padding: 11px;
+        border: 6px solid #fe1064;
+        border-radius: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .ir {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px solid #fe1064;
+        border-radius: 50px;
+        font-family:'kdam thmor pro';
+        font-size: 24px;
+        width: 0%;
+        height: 90px;
+        padding: 0px 40px;
+        text-transform: uppercase;
+    }
+    
+
+}
+
 @media screen and (max-width: 700px) {
     #sobre {
         height: unset;
@@ -867,8 +1163,6 @@ footer .container-grid{
     #contato {
         padding-top: 150px;
 
-        background-color: var(--roxo-gamifica);
-        color: white;
     }
 
     #contato h2 {
@@ -894,6 +1188,10 @@ footer .container-grid{
 
     .conteudo-banner p {
         font-size: 20px;
+    }
+
+    .campo-de-nome {
+        align-items: flex-end;
     }
 
     footer img {
