@@ -49,9 +49,9 @@ header div.container-grid {
     justify-content: center;
 }
 
-img {
-    /* padding: 0px 80px; */
-}
+/* img {
+     padding: 0px 80px; 
+ } */ 
 
 .menu {
     width: 66.79%;
@@ -167,6 +167,16 @@ h2 {
     justify-content: space-around;
 }
 
+/* aqui aparece o icone da sinopse */
+.primeira-imagem-case 
+
+/* aqui aparece a sinopse do jogo */
+.primeira-sinopse
+
+/* aqui explica o case */
+.primeiro-case
+
+
 .caixa-dos-cases {
     background-image: url(imagens/elementos-esquerda-2.png),url(imagens/decoracao-historia-cases-esquerda.png),url(imagens/decoracao-historia-cases-direita.png);
     background-repeat: no-repeat;
@@ -192,8 +202,11 @@ h2 {
 
     width: 320px;
 
+    display: flex;
 
+    justify-content: center;
 }
+    
 
 
 .sinopse-cases > div.oncinha {
