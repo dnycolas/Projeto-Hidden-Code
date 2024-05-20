@@ -65,6 +65,7 @@ header div.container-grid {
     font-family: 'Bruno';
     font-size: 24px;
     background-color:var(--rosa-hiddencode);
+
     color: white;
 
 
@@ -786,6 +787,12 @@ footer .container-grid{
     margin-top: 2%;
 }
 
+.menuFechado
+
+#iconeBarra{
+    display: none;
+}
+
 @media screen and (max-width: 1300px) {
     
     header div.container-grid {
@@ -852,6 +859,10 @@ footer .container-grid{
     
         display: flex;
         justify-content: space-between;
+    }
+
+    .menu a {
+        width: 100%;
     }
 }
 
