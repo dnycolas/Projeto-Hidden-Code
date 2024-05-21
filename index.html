@@ -6,7 +6,7 @@
     <title>Hidden Code</title>
 
     <link rel="stylesheet" href="estilo.css">
-    <script src="javaScript.js"></script>
+    <script src="javaScript.js" defer></script>
 
 </head>
 
@@ -20,12 +20,10 @@
                     <a href="#convite-portfolio" style="border: solid;">Portfolio</a>
                     <a href="#formulario" style="border: solid;">Contate-nos</a>
                 </nav>
-                <button class="botaoUm" onclick="abrirMenu()">
-                    <svg id="iconeBarra 0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                </button>
-                <button class="botaoDois" onclick="abrir() >
+                <button id="botaoUm" onclick="abrirFecharMenu()">
+                <svg id="iconeBarra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
                 <svg id="iconeX" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-                  </button>
+                </button>
             </div>
         </header>
 
@@ -65,7 +63,7 @@
                 </div>
                 
             </div>
-            <button class="botao proximo" id="botao proximo" onclick="mudarOncinha() ">o</button>
+            <button class="botao proximo" id="botao" onclick="mudarOncinha() ">o</button>
             <button class="botao anterior" onclick="mudarElementos()">o</button>
             <div class="pontinhos"></div>
             
@@ -90,14 +88,14 @@
     <div class="elemento-2">
         <section id="contato">
             <h2>Contate-nos</h2>
-            <form>
+            <form onsubmit="solicitarOrcamento(event)">
                 <div class="campo">
                     <label for="campo-nome">Qual é o seu nome?</label>
-                    <input id="campo-nome" type="text" placeholder="Digite seu nome...">
+                    <input required id="campo-nome" type="text" placeholder="Digite seu nome...">
                 </div>
                 <div class="campo">
                     <label for="campo-nome">Em qual email nós podemos te responder?</label>
-                    <input type="email" name="" id="campo-nome" placeholder="Digite seu email...">
+                    <input required type="email" name="" id="campo-email" placeholder="Digite seu email...">
                 </div>
                 <div class="opcoes">
                     <a href="#">
@@ -145,7 +143,7 @@
 
                     <label for="campo-nome">Descreva um pouco da sua empresa, e também o problema que está procurando
                         solucionar</label>
-                    <textarea name="" id="campo-nome" cols="30" rows="10"
+                    <textarea name="" id="campo-texto" cols="30" rows="10"
                         placeholder="Descreva um pouco da sua empresa, e também o problema que enfrenta."></textarea>
 
                     <img id="quadradinho" src="imagens/quadradinho-do-feedback.png" alt="">

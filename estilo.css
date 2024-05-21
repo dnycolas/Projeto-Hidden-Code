@@ -787,10 +787,25 @@ footer .container-grid{
     margin-top: 2%;
 }
 
-.menuFechado
+.menuFechado {
+    display: none;
+}
+
+#botaoUm{
+    width: 94px;
+    height: 80px;
+    right: 1%;
+}
 
 #iconeBarra{
     display: none;
+    width: 94px;
+    height: 80px;
+}
+
+#iconeX{
+    width: 94px;
+    height: 80px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -852,6 +867,7 @@ footer .container-grid{
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
     }
 
     .menu {
@@ -865,6 +881,8 @@ footer .container-grid{
         width: 100%;
     }
 }
+
+
 
 
 @media screen and (max-width: 1080px) {
