@@ -9,15 +9,15 @@
     const abrirFecharMenu = () => {
         if(menu.classList.contains('menuFechado')){
             menu.classList.remove('menuFechado')
-            bar.style.display = 'none'
-            barX.style.display = "inline"
-            nav.style.display = 'inline-flex'
-        }
-        else{
-            menu.classList.add('menuFechado')
             barX.style.display = 'none'
             bar.style.display = 'inline'
             nav.style.display = 'none'
+        }
+        else{
+            menu.classList.add('menuFechado')
+            bar.style.display = 'none'
+            barX.style.display = "inline"
+            nav.style.display = 'inline-flex'
 
         }
     }
@@ -120,7 +120,7 @@ const solicitarOrcamento = (event) => {
         console.log(resposta)
 
         // limpar os campos (inputs)
-        document.querySelector("#contato form").reset()
+        document.querySelector(".contado form").reset()
 
         // mostra alert como msg de sucesso
         alert("solicitação cadastrada")
