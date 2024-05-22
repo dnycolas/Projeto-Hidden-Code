@@ -43,10 +43,17 @@
     <section class="cases-da-empresa" id="cases">
         <div id="caixa-dos-cases" class="caixa-dos-cases">
             <div class="sinopse-cases">
-                <div class="oncinha" id="oncinha">
-                    <img class="primeira-imagem-case" src="imagens/onça.png" alt="onça1">
-    
-                    <p>Reduzimos o desperdício de comida em uma escola em 80%</p>
+                <div class="oncinha visible" id="oncinha">
+                    <img  id="primeira-imagem-case" src="imagens/onça.png" alt="onça1">
+                    <p id="caseOnca">Reduzimos o desperdício de comida em uma escola em 80%</p>
+                </div>
+                <div class="oncinha hidden" id="guerreiro">
+                    <img id="segunda-imagem-case" src="imagens/indigena.jpg" alt="onça1" style="display: none;">
+                    <p id="caseInd" style="display: none;">Reduzimos o desperdício de comida em uma escola em 0%</p>
+                </div>
+                <div class="oncinha hidden" id="passaro">
+                    <img id="terceira-imagem-case" src="imagens/passarinhos.jpg" alt="onça1" style="display: none;" >
+                    <p id="casePass" style="display: none;">É a vida</p>
                 </div>
             </div>
             
@@ -63,10 +70,13 @@
                 </div>
                 
             </div>
-            <button class="botao proximo" id="botao" onclick="mudarOncinha() ">o</button>
-            <button class="botao anterior" onclick="mudarElementos()">o</button>
-            <div class="pontinhos"></div>
             
+            
+        </div>
+        <div class="botoes">
+            <button onclick="selecionarSlideUm()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
+            <button onclick="selecionarSlideDois()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
+            <button onclick="selecionarSlideTres()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg></button>
         </div>
     </section>
     <section class="convite-portfolio">
@@ -101,15 +111,16 @@
                     <a href="#">
                         <img src="imagens/icone-google.png" alt="icone do google">
                     </a>
-
+                    
                     <a href="#">
                         <img src="imagens/icone-email.png" alt="icone do email">
                     </a>
-
+                    
                     <a href="#">
                         <img src="imagens/icone-user.png" alt="icone do usuario">
                     </a>
                 </div>
+                <button id="formulario-login" type="submit" onclick="solicitarFeedback()">Enviar</button>
                 <!-- essas linha serão usadas após a inplementação dos elementos de JAVASCRIPT -->
                 <!-- <div class="campo-textarea">
                     <label for="campo-nome">Descreva um pouco da sua empresa, e também o problema que está procurando
@@ -148,15 +159,8 @@
 
                     <img id="quadradinho" src="imagens/quadradinho-do-feedback.png" alt="">
                 </div>
-                <button type="submit">Enviar</button>
-                <!-- essas linha serão usadas após a inplementação dos elementos de JAVASCRIPT -->
-                <!-- <div class="campo-textarea">
-                    <label for="campo-nome">Descreva um pouco da sua empresa, e também o problema que está procurando
-                        solucionar</label>
-                    <textarea name="" id="campo-nome" cols="30" rows="10"
-                        placeholder="Descreva um pouco da sua empresa, e também o problema que enfrenta."></textarea>
-                </div>
-                <button type="submit">Enviar</button> -->
+                <button type="submit" onclick="solicitarFeedback()">Enviar</button>
+                
             </form>
         </section>
     </div>

@@ -142,9 +142,10 @@ header div.container-grid {
 
 .cases-da-empresa {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0px 40px;
-    background: #f5f5f7;
+    
 }
 
 h2 {
@@ -160,12 +161,18 @@ h2 {
 
 .caixa-dos-cases {
     display: flex;
+    justify-content: space-around;
+
     color: var(--rosa-hiddencode);
+
     width: 100%;
     padding: 30px;
+
+    background: #f5f5f7;
+
     border: 6px solid;
     border-radius: 20px;
-    justify-content: space-around;
+
 }
 
 /* aqui aparece o icone da sinopse */
@@ -196,16 +203,11 @@ h2 {
 
 .sinopse-cases {
 
-    flex-direction: row;
-
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-
     width: 320px;
 
     display: flex;
 
-    justify-content: center;
+    justify-content: space-between;
 }
     
 
@@ -260,7 +262,7 @@ h2 {
     align-items: center;
     margin: 0 10;
 
-    position: relative;
+    position: absolute;
 
     transition: 0.5ms ease;
 }
@@ -270,6 +272,10 @@ h2 {
     height: 34%;
     object-fit: cover;
     object-position: center;
+
+
+    border: solid 3px black;
+    border-radius: 50%;
 }
 
 .oncinha p {
@@ -278,41 +284,21 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 15px;
+
+    background-color: white;
 }
 
-.botao {
-    padding: 1em 2em;
-    position: absolute;
-    transform: translateY(-0%);
-    top: 150%;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 900;
-    transition: transform 0.2s ease-in-out;
 
-    &:active,
-    &:focus {
-        transform: translateY(-50%) scale(1);
-    }
-
-    &:hover {
-        transform: translateY(-10%) scale(1) ;
-    }
-}
 
 .proximo {
     left: 1%;
 }
 
-.anterior {
-    right: 1%;
-}
+
 
 
 .historia {
-    border: 2px solid #fe1064;
+    border: 3px solid #fe1064;
     display: flex;
     width: 60%;
     flex-direction: column;
@@ -330,7 +316,7 @@ h2 {
     font-size: 16px;
     font-family: 'Bruno';
     outline: none;
-    box-shadow: 0 0 0 0 transparent;
+    border-radius: 31px ;
 }
 
 textarea#case {
@@ -360,6 +346,45 @@ textarea#case {
 
     margin: 0px;
 }
+
+
+.botoes {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.botoes button {
+    width: 30px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    margin: 10px 10px;
+}
+
+.botoes button {
+    fill: #00000000;
+
+    border: 3px solid var(--rosa-hiddencode);
+    border-radius: 26px;
+
+    transition: all 600ms ease; 
+}
+
+.botoes button:hover {
+    fill: var(--rosa-hiddencode);
+}
+
+header {
+    height: 165px;
+
+
+}
+
+
 
 .convite-portfolio {
     display: flex;
@@ -739,6 +764,9 @@ img#quadradinho{
     color: #b9b9b9;
 } 
 
+#formulario-login {
+    margin-top: 3%;
+}
 
 footer {
     height: 50%;
@@ -807,6 +835,9 @@ footer .container-grid{
     width: 94px;
     height: 80px;
 }
+
+
+
 
 @media screen and (max-width: 1300px) {
     

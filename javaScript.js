@@ -34,48 +34,64 @@
 
 
     // Eventos para os botoes
+
+
+
+    let display = document.querySelector('.sinopse-cases') 
+
+    let caseOnca = document.querySelector('#caseOnca')
+    let  imgUm  = document.querySelector('#primeira-imagem-case')
+
+    let caseInd = document.querySelector("#caseInd")
+    let  imgDois  = document.querySelector('#segunda-imagem-case')
+    
+    let casePass = document.querySelector("#casePass")
+    let  imgTres  = document.querySelector("#terceira-imagem-case")
+
+    let oncinha = document.querySelector('.oncinha')
+
+
+
+    const selecionarSlideUm = () => {
+    caseOnca.style.display = 'inline'
+    imgUm.style.display = 'inline'
+
+    caseInd.style.display = 'none'
+    imgDois.style.display = 'none'
+
+    casePass.style.display = 'none'
+    imgTres.style.display = 'none'
+
+    }
+    const selecionarSlideDois = () => {
     
 
+    caseOnca.style.display = 'none'
+    imgUm.style.display = 'none'
     
-    // funcoes
-  const button = document.getElementById("botao");
-  const div = document.getElementById('oncinha');
+    caseInd.style.display = 'inline'
+    imgDois.style.display = 'inline'
 
-  // definir a funcao que vai nos elementos
-  function mudarOncinha() {
-    div.innerHTML = '<p>Reduzimos o desperdício de comida em uma escola em </p>';
-  }
-
-//   button.addEventListener(mudarOncinha);
-
-  button.addEventListener("click", mudarOncinha)
-        
-    // adicionar evento no butao
+    casePass.style.display = 'none'
+    imgTres.style.display = 'none'
+    }
+    const selecionarSlideTres = () => {
     
+    caseOnca.style.display = 'none'
+    imgUm.style.display = 'none'
     
+
+    caseInd.style.display = 'none'
+    imgDois.style.display = 'none'
+
+    casePass.style.display = 'inline'
+    imgTres.style.display = 'inline'
+
+    }
+
             
 
-        
-        
-
-
-
-
-    // 3. colocar essa função ao botão
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 // implementar sistemas API nos input (contate-nos)
 
@@ -83,13 +99,11 @@ const solicitarOrcamento = (event) => {
     // Pegar valorez dos inputs
     let valorNome = document.getElementById("campo-nome").value
     let valorEmail = document.getElementById("campo-email").value
-    let valorDescricao = document.getElementById("campo-descricao").value
 
     // Organizar objetos com os valores
     let dadosForm = {
         nome: valorNome,
         email: valorEmail,
-        descricao: valorDescricao
     }
 
     // Enviar requisicao para api
